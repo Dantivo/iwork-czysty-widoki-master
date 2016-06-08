@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iwork</title>
+  <%= stylesheet_link_tag    'application.css', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application.js', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+<nav>
+  <div class="nav-wrapper">
+    <%= link_to "Logo", index_path, class:'brand-logo' %>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down black-text"><span class="black-text">
+        <li><%= link_to "Strona główna",index_path %></li>
+        <li><%= link_to "Oferty",index_path %></li>
+        <li><%= link_to "Kontakt",index_path %></li>
+        <li><%= link_to "Rejestracja", new_user_registration_path %></li>
+      <li><%= link_to "Logowanie", new_user_session_path %></li></span>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="index.html">Strona główna</a></li>
+      <li><a href="index.html">Oferty</a></li>
+      <li><a href="collapsible.html">Kontakt</a></li>
+      <li><a href="mobile.html">Rejestracja </a></li></span>
+      <li><a href="mobile.html">Logowanie</a></li></span>
+    </ul>
+  </div>
+</nav>
+
+
+<%= yield %>
+
+
+</body>
+</html>
