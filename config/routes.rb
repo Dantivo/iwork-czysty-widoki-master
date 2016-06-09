@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'registrations_controller/sign_up_params'
 
+#jaszczomptutajELO XD
+  
   get 'registrations_controller/account_update_params'
 
   devise_for :users, controllers: {registrations: 'registrations'}
