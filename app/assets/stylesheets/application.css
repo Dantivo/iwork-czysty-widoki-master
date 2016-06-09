@@ -39,3 +39,21 @@ html, body{
     display: table-cell;
     vertical-align: middle;
 }
+.cale {
+    height: 100%;
+    /*text-align: center;*/
+    white-space: nowrap;
+    display: table !important;
+}
+
+.lewy {
+    display: inline-block;
+    vertical-align: middle;
+    /*display: inline-block;
+    height: 600px;
+    vertical-align: middle;*/
+    /*margin-top: 50%;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
