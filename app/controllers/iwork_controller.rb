@@ -1,7 +1,7 @@
 class IworkController < ApplicationController
 
   def index
-
+    @profile=current_user
   end
 
 
@@ -15,6 +15,10 @@ class IworkController < ApplicationController
 
   def utworz
   end
-  end
+
   def parametryrej
   end
+  def profil
+
+  end
+end

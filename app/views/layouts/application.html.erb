@@ -20,15 +20,9 @@
         <li><%= link_to "Oferty",index_path %></li>
         <li><%= link_to "Kontakt",index_path %></li>
         <% if user_signed_in? %>
-           <li>
-             <%= link_to('Profil', profil_path) %>
-           </li>
-          <li>
-          <%= link_to('Wyloguj', destroy_user_session_path, :method => :delete) %>
-          </li>
-          <li>
-            Zalogowany jako <%= current_user.imie %> <%= current_user.nazwisko %>
-          </li>
+
+          <li><%= link_to current_user.nazwisko, profil_path %></li>
+          <li><%= link_to('Wyloguj', destroy_user_session_path, :method => :delete) %></li>
         <% else %>
           <li><%= link_to "Rejestracja", new_user_registration_path %></li>
           <li><%= link_to "Logowanie", new_user_session_path %></li></span>
@@ -76,3 +70,5 @@
 
 </body>
 </html>
+
+<!-- smieci
