@@ -34,6 +34,9 @@
           <div class="row">
             <div class="input-field col s6 offset-s3">
               <%= f.password_field :password, autocomplete: "off", class:'validate' %>
+              <% if @minimum_password_length %>
+                  <em>(co najmniej <%= @minimum_password_length %> znaków)</em>
+              <% end %><br />
               <label for="password">Password</label>
             </div>
           </div>

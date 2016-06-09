@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   match 'view', to: 'iwork#view', via: [:post, :get]
   match 'iwork/utworz' => 'iwork#utworz', via: [:get, :post]
   match 'iwork/pokaz' => 'iwork#pokaz', via: [:get, :post]
+  match 'profil', to: 'iwork#profil', via: [:post, :get]
   # You can have the root of your site routed with "root"
 
   root 'iwork#index'
