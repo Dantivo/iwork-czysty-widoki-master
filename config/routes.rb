@@ -5,12 +5,19 @@ Rails.application.routes.draw do
   
   get 'registrations_controller/account_update_params'
 
-  devise_for :users, controllers: {registrations: 'registrations'}
+  devise_for :users, controllers: {registrations: 'registrations'}, path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'zarejestrooojXD'}
+
+  # as :user do
+  #   get "/login" => "devise/sessions#new"
+  # end
+
   # devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   resources :iwork
   get 'iwork/index'
+  # match 'zalogujxd', to: 'sessions#new'
+
   match 'index', to: 'iwork#index', via: [:post, :get]
   get 'iwork/formularz'
   get 'iwork/view'

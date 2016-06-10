@@ -19,6 +19,6 @@ class IworkController < ApplicationController
   def parametryrej
   end
   def profil
-
+    @user=current_user
   end
 end
