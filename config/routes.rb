@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   match 'index', to: 'iwork#index', via: [:post, :get]
   get 'iwork/formularz'
   get 'iwork/view'
+  get 'iwork/oferty'
+  match 'oferty', to: 'iwork#oferty', via: [:post, :get]
   match 'formularz', to: 'iwork#formularz', via: [:post, :get]
   match 'view', to: 'iwork#view', via: [:post, :get]
   match 'iwork/utworz' => 'iwork#utworz', via: [:get, :post]

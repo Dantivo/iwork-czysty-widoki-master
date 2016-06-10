@@ -49,11 +49,8 @@ html, body{
 .lewy {
     display: inline-block;
     vertical-align: middle;
-    /*display: inline-block;
-    height: 600px;
-    vertical-align: middle;*/
-    /*margin-top: 50%;*/
     position: absolute;
     left: 50%;
     top: 50%;
 }
+

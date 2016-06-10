@@ -7,6 +7,7 @@ gem 'rails', '4.2.5.1'
 #naszegemy
 gem 'materialize-sass'
 gem 'devise'
+gem 'gmaps4rails'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
