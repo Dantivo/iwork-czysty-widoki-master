@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Production: Iwork v2" type="RailsRunConfigurationType" factoryName="Rails">
+  <configuration default="false" name="Production: iwork-czysty-widoki-master" type="RailsRunConfigurationType" factoryName="Rails">
     <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
-    <module name="Iwork v2" />
+    <module name="iwork-czysty-widoki-master" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />

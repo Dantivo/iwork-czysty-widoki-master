@@ -6,8 +6,8 @@
     <div class="col s12 m3 l3">
         <div class="row card hoverable">
         <img class="card-image circle" width="100%">
-
-        <span class="card-title"> Frunch tutaj imie </span> 
+        <%= image_tag current_user.avatar.url %>
+        <span class="card-title"> <%= current_user.imie %> </span>
         <div class="card-content">
             <!-- rzeczy profilowe -->
             <div class="row">
