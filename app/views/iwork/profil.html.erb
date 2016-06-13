@@ -6,7 +6,7 @@
     <div class="col s12 m3 l3">
         <div class="row card hoverable">
         <img class="card-image circle" width="100%">
-        <%= image_tag current_user.avatar.url %>
+        <%= image_tag current_user.avatar.url(:medium) %>
         <span class="card-title"> <%= current_user.imie %> </span>
         <div class="card-content">
             <!-- rzeczy profilowe -->
@@ -16,15 +16,21 @@
             <div class="row">
                 Nazwisko: <%= current_user.nazwisko %>
             </div>
+            <% unless current_user.wiek.blank? %>
             <div class="row">
-                Wiek:
+                Wiek: <%= current_user.wiek %>
             </div>
+            <% end %>
+            <% unless current_user.miasto.blank? %>
             <div class="row">
-                Miasto:
+                Miasto: <%= current_user.miasto %>
             </div>
+            <% end %>
+            <% unless current_user.miasto.blank? %>
             <div class="row">
-                Kontakt:
+                Kontakt: <%= current_user.kontakt %>
             </div>
+
             <div class="row">
                 <i class="small material-icons">stay_current_portrait</i>
             </div>
@@ -33,22 +39,21 @@
             </div>                                    
             <div class="row">
                 <i class="small material-icons">http</i>
-            </div>            
+            </div>
+          <% end %>
         </div>        
         </div>
     </div>
     <div class="col s12 m9 l9">
        <div class="row card hoverable">
         <span class="card-title"> Moje CV </span>
-        <div class="card-content">            
-<div class="chip">
-    CV1
+        <div class="card-content">
+          <% unless current_user.cv.blank? %>
+    <div class="chip">
+    <%= current_user.cv.url %>
     <i class="material-icons">close</i>
-  </div>
-  <div class="chip">
-    CV2
-    <i class="material-icons">close</i>
-  </div>
+    </div>
+          <% end %>
           <a class="btn-floating btn-large waves-effect waves-light red right" style="margin-bottom:10px;margin-right:-10px;"><i class="material-icons">add</i></a>
         </div>
        </div>
