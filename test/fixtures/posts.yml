@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tytul: MyText
+  tresc: MyText
+  data: 2016-06-12 16:29:54
+
+two:
+  tytul: MyText
+  tresc: MyText
+  data: 2016-06-12 16:29:54

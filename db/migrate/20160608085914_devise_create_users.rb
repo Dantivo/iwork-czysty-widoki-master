@@ -20,6 +20,9 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string   :last_sign_in_ip
       t.string   :imie
       t.string   :nazwisko
+      t.integer  :wiek
+      t.string   :miasto
+      t.text     :kontakt
       t.attachment :avatar
       t.attachment :cv
 
